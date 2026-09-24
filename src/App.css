@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+.accordion-button:focus {
+    box-shadow: none !important;
+    border-color: inherit !important;
+
+}
+body {
+  transition: all 0.8s ease-in-out;
+}
+.alert-box {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.8s ease-in-out;
+}
+
+/* show state */
+.alert-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+body.dark textarea::placeholder {
+  color: white;
+}
+
+body.light textarea::placeholder {
+  color: black;
+}
+.navbar {
+  transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+}
